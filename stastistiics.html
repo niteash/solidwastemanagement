@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="col-12 bg-dark p-5">
+        <a class="d-flex text-decoration-none" href="./index.html"> <button class="btn text-white"> <i class="bi bi-arrow-left-circle-fill"> </i> <span class="ms-3">Back</span></button></a>
+
+         </div>
+    <section class="container-fluid overflow-hidden bg-dark h-100" style="text-align: -webkit-center;">
+        <div class="row">
+         <div class="text-center co text-white mt-5 mb-3 p-0 ">
+           <h1 class="pattern p-1"><b><small>Solid Waste Management in India in</small></b> <b class="bg-white text-dark p-3">FY 2021</b></h1>
+         </div>
+         <div class="p-5 m-5">
+            <div class="chart-container" style="position:relative; height:60vh; width:80vw">
+           <canvas id="myChart" width="200" height="100"></canvas>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col">
+         <div class="row">
+           <a class="text-center text-decoration-none text-white mb-5" href="https://www.statista.com/statistics/1168442/india-municipal-solid-waste-generated-by-state/" target="_blank">
+           <button class="btn btn-dark">Reference</button>
+           </a>
+         </div>
+        </div>
+       </section>
+</body>
+
+<script src="./node_modules/chart.js/dist/chart.umd.js"></script>
+<script>
+    let ctx = document.getElementById("myChart");
+
+    function beforePrintHandler () {
+    for (let id in Chart.instances) {
+        Chart.instances[id].resize();
+    }
+}
+
+    window.addEventListener('beforeprint', () => {
+  myChart.resize(600, 600);
+});
+window.addEventListener('afterprint', () => {
+  myChart.resize();
+});
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Municipal Solid Waste in metrics ton per day'],
+      datasets: [
+        {
+        label: 'Delhi',
+        data: [10990],
+        borderWidth: 3,
+    hoverBorderColor: 'white'
+        
+
+      },
+      {
+        label: 'Gujarat',
+        data: [10373.8],
+        borderWidth: 3,
+    hoverBorderColor: 'white'
+
+
+      },
+      {
+        label: 'Rajasthan',
+        data: [6897.2],
+        borderWidth: 3,
+    hoverBorderColor: 'white'
+
+
+      }
+      
+    ]
+      
+    },
+    options: {
+      animation:{
+        tension:{
+          duration:1000,
+          easing:'linear',
+          from:1,
+          to:0,
+          loop:true
+        }
+      },
+      scales: {
+        y: {
+          min:0,
+          max:15000,
+          beginAtZero: true
+        }
+      }
+    },
+  });
+</script>
+ 
+</html>

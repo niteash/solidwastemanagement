@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<style>
+    .about{
+       height: 550px !important;
+        overflow: hidden;
+        display: flex;
+    }
+
+    .para{
+        padding-left: 5rem;
+    }
+
+    @media (max-width : 992px) {
+        .about-img{
+            display: flex;
+            flex-direction: column;
+            border-radius: 50% !important;
+        }
+
+        .about-para{
+            width: 100% !important;
+        }
+
+        .about-name{
+            font-size: 13px;
+        }
+
+
+    }
+
+    @media (max-width : 571px) {
+        .about-img{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0% !important;
+            justify-content: center;
+        }
+
+       .about-para{
+      
+        display: none;
+        font-size: 14px;
+       }
+
+        .about-name{
+            font-size: 13px;
+        }
+
+
+    }
+
+
+    @media (max-width : 446px) {
+        .about-img{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            border-radius: 0% !important;
+            justify-content: center;
+        }
+
+        .about{
+       height: 550px !important;
+        overflow: hidden;
+        display: flex;
+        justify-content:center ;
+    }
+
+       .about-para{
+      
+        display: none !important;
+       
+       }
+
+        .about-name{
+            font-size: 8px;
+        }
+
+
+    }
+
+    img{
+        transition: outline 0.8s ease-in-out;
+
+    }
+
+    img:hover{
+        outline:  solid 20px white;
+        transition: outline 0.8s ease-in-out;
+
+    }
+
+</style>
+<body>
+    <section class="container-fluid bg-black bg-gradient min-vh-100">
+        <div class="row ">
+            <div class="col-5 d-flex">
+           <a class="d-flex text-decoration-none" href="./index.html"> <button class="btn text-white"> <i class="bi bi-arrow-left-circle-fill"> </i> <span class="ms-3">Back</span></button></a>
+
+            </div>
+            <div class="col-7 d-flex">
+                <h1 class="text-center text-white mt-5 mb-5"><b>Who Are We?</b></h1>
+
+            </div>
+            
+        </div>
+
+    <!-- niki -->
+
+
+    <section class="container-fluid about mb-5">
+        <div class="row about-img  align-items-center">
+            <div class="col-xl-5 col-sm-3 col-lg-3 col-md-3 col-md-4">
+                <img src="./img/nikki.JPG" class="w-75 shadow rounded-circle mb-md-4 ms-5 about-img" style="filter: grayscale(100%);" alt="" srcset="">
+            </div>
+            <div class="col-xl-7 col-sm-9 col-md-9 col-lg-9  text-sm-center text-lg-start para">
+                <h3 class="text-white mt-sm-3 text-uppercase">Shwe Win Aung <small class="text-white-50 fs-4 "><small class="text-uppercase about-name "> Research & Web Developer</small></small> </h3>
+               <p class="text-white-50">Registration Id <b>12320695</b> </p> 
+               <p class="text-white-50">BSc.IT</p>
+                <p class="text-white w-auto text-white-50 lh-5 about-para text-uppercas about-para d-lg-block d-md-none d-sm-none d-xs-none"><small>
+                    My name is Shwe Win Aung, and I am introducing myself as a highly motivated and skilled student from Myanmar. Currently, I am actively engaged in freelancing, specializing in front-end development. Over the years, I have gained extensive experience in creating visually appealing and user-friendly websites through my expertise in HTML, CSS, JavaScript, and various front-end frameworks such as Bootstrap and React. 
+                </small></p>
+
+                <p class="text-white w-auto text-white-50 lh-5 about-para text-uppercase d-lg-none d-block d-sm-block d-md-block "><small>
+                    My name is Shwe Win Aung, and I am introducing myself as a highly motivated and skilled student from Myanmar. 
+                </small></p>
+                <a href="https://www.linkedin.com/in/shwe-win-aung-nikki-577759237/">
+                <button class="btn btn-dark"><span class="me-2">Reach Me</span> <i class="bi bi-arrow-right-circle-fill"></i></button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+     <!-- khushi -->
+
+     <section class="container-fluid about">
+        <div class="row about-img flex-lg-row-reverse flex-md-column align-items-center">
+            <div class="col-xl-5 col-sm-3 col-lg-3 col-md-3 col-md-4">
+                <img src="./img/khushi-3.jpeg" class="w-75 shadow rounded-circle mb-md-4 ms-5 about-img" style="filter: grayscale(100%);" alt="" srcset="">
+            </div>
+            <div class="col-xl-7 col-sm-9 col-md-9 col-lg-9  text-sm-center text-lg-start para">
+                <h3 class="text-white mt-sm-3 text-uppercase">khushi Johari <small class="text-white-50 fs-4 "><small class="text-uppercase about-name "> Research</small></small> </h3>
+               <p class="text-white-50">Registration Id <b>12301997</b> </p> 
+               <p class="text-white-50">BSc.IT</p>
+                <p class="text-white w-auto text-white-50 lh-5 about-para text-uppercas about-para d-lg-block d-md-none d-sm-none d-xs-none"><small>
+                    My name is Khushi Johari, aand I am introducing myself as a highly motivated and skilled student. Currently, I am actively engaged in computer secience & practical lessons.
+                </small></p>
+
+                <p class="text-white w-auto text-white-50 lh-5 about-para text-uppercase d-lg-none d-block d-sm-block d-md-block "><small>
+                    My name is Khushi Johari, and I am introducing myself as a highly motivated and skilled student. 
+                </small></p>
+                <a target="_blank" href="www.linkedin.com/in/khushi-johari">
+                <button class="btn btn-dark"><span class="me-2">Reach Me</span> <i class="bi bi-arrow-right-circle-fill"></i></button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- shawn -->
+    <section class="container-fluid about">
+        <div class="row about-img  align-items-center">
+            <div class="col-xl-5 col-sm-3 col-lg-3 col-md-3 col-md-4">
+                <img src="./img/shawn-2.jpeg" class="w-75 shadow rounded-circle mb-md-4 ms-5 about-img" style="filter: grayscale(100%);" alt="" srcset="">
+            </div>
+            <div class="col-xl-7 col-sm-9 col-md-9 col-lg-9  text-sm-center text-lg-start para">
+                <h3 class="text-white mt-sm-3 text-uppercase">Shawn Tatenda Tunmba <small class="text-white-50 fs-4 "><small class="text-uppercase about-name "> Research</small></small> </h3>
+               <p class="text-white-50">Registration Id <b>12302678</b> </p> 
+               <p class="text-white-50">BSc.IT</p>
+                <p class="text-white w-auto text-white-50 lh-5 about-para text-uppercas about-para d-lg-block d-md-none d-sm-none d-xs-none"><small>
+                    My name is Shawn Tatenda Tunmba, aand I am introducing myself as a highly motivated and skilled student. Currently, I am actively engaged in computer secience & practical lessons.
+                </small></p>
+
+                <p class="text-white w-auto text-white-50 lh-5 about-para text-uppercase d-lg-none d-block d-sm-block d-md-block "><small>
+                    My name is Shawn Tatenda Tunmba, and I am introducing myself as a highly motivated and skilled student. 
+                </small></p>
+                <a target="_blank" href="https://instagram.com/lil_yunger?igshid=MzNlNGNkZWQ4Mg==">
+                <button class="btn btn-dark"><span class="me-2">Reach Me</span> <i class="bi bi-arrow-right-circle-fill"></i></button>
+                </a>
+            </div>
+        </div>
+    </section>
+    </section>
+
+
+</body>
+</html>
