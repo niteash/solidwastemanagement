@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solid Waste Management</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<style>
+  @media (max-width: 576px){
+    .card-section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+    .end{
+      margin: 0;
+      margin-top: 20px;
+    }
+
+    .end-flex{
+      display: flex;
+    }
+
+  }
+
+  @media (max-width:500px){
+
+    .home-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content{
+      width: -webkit-fill-available;
+
+    }
+
+    .adhd-top-video{
+      max-height:350px ;
+    } 
+  }
+</style>
+<body>
+  <!-- nav -->
+
+
+      <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand  text-white" href="./index.html">SWM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav text-white">
+              <li class="nav-item">
+                <a class="nav-link active  text-white" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-white" target="_blank" href="./about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-white" target="_blank" href="./Method.html">Methodologies</a>
+              </li>
+
+              <li class="nav-item">
+                <a class=" nav-link text-white" target="_blank" href="./stastistiics.html">Statistics</a>
+              </li>
+
+              <li class="nav-item">
+                <a class=" nav-link text-white" target="_blank" href="./effects.html">Effects of Poor SWM</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- home -->
+     <section>
+      <div class=" overflow-hidden bg-black bg-gradient">
+        <div class="row align-items-center home-section align-content-sm-center justify-content-sm-center text-white min-vh-100">
+          
+            <!-- <div class="col d-flex justify-content-center align-items-center ratio ratio-21x9">
+              <video autoplay muted loop src="./video/SWM.mp4"></video>
+            </div> -->
+
+            <div class="adhd-top-video col">
+              <div class="adhd-top-video2">
+                  <!-- <iframe width="500" height="280" src="./video/SWM.mp4" frameborder="0" allowfullscreen></iframe> -->
+                  <video autoplay muted loop src="./video/SWM.mp4"></video>
+             </div>
+          </div>
+
+            <div  class="col-5 content text-center">
+              <h1 class="text-sm-center mt-lg-4 mb-lg-4">Solid Waste Management</h1>
+              <p> <strong class="element text-sm-center">
+                Solid waste is material which arises from various human activities...
+               
+              </strong>
+              </p>
+          </div>
+        </div>
+      </div>
+     </section>
+
+<!-- parallex -->
+    <section>
+      <div class="row overflow-hidden m-auto hero-img text-center">
+       
+        <h2 class="fw-bold p-3 m-auto text-center mb-3 text-white w-50 bg-black text-uppercase ">"waste not, want not"</h2>
+        <p class="p-3 text-center bg-black w-50 text-white m-auto">
+        Solid waste is material which arises from various human activities and which is normally discarded as useless or unwanted. It is responsible for land pollution in urban and industrial areas.
+        </p>
+
+      </div>
+    
+    </section>
+
+    <!-- overview -->
+    <section class="container-fluid bg-black bg-gradient overflow-hidden h-100">
+       <div class="row">
+        <div class="col-6 p-3 mt-5">
+          <h2 class=" mb-5 mt-3 text-white text-uppercase"><small class="text-white-50">What is</small> <b>Solid Waste Management ?</b></h2>
+          <p class="mb-3 mt-3 text-white"> <b>Mainly refers to the complete process of collecting, treating and disposing of solid wastes. In the waste management process, the wastes are collected from different sources and are disposed of. </b></p>
+          <p class="text-white lh-lg fw-bolder mt-2  text-white">This process includes collection, transportation, treatment, analysis and disposal of waste.
+              <h3 class="text-white">Sources of Solid Wastes</h3>
+            <ul class="text-white">
+              <small>
+                <li>Solid domestic garbage</li>
+                <li>Solid agricultural waste</li>
+                <li>Plastics, glass, metals, e-waste, etc</li>
+                <li>Medical waste</li>
+                <li>Construction waste, sewage sludge</li>
+              </small>
+             
+            </ul>
+          </p>
+        </div>
+        <div class="col-6 mt-5 mb-3 mb-5 saturate-1">
+          <img src="./images/image-1.webp" class="overview-img mb-3 " alt="" srcset="">
+          <img src="./images/image-2.webp" class="overview-img" alt="" srcset="">
+          <img src="./images/image-3.jpeg" class="overview-img mb-5" alt="" srcset="">
+          <img src="./images/image-4.avif" class="overview-img mb-5" alt="" srcset="">
+        </div>
+       </div>
+
+    </section>
+
+    <!-- parallex -->
+    <section>
+      <div class="row m-auto overflow-hidden hero-second-img flex-row-reverse text-center">
+       
+        <h2 class="fw-bold p-3 m-auto text-center mb-3 text-white fs-5 w-50 bg-black text-uppercase ">"Today, recycle for a better tomorrow."</h2>
+        <p class="p-3 bg-black w-50 text-white m-auto">
+          Recovery operation by which waste materials are reprocessed into products, materials or substances whether for the original or other purposes
+        </p>
+
+      </div>
+    
+    </section>
+
+    <!-- Effects -->
+    <section class="container-fluid overflow-hidden bg-black bg-gradient card-section h-100">
+      <div class="row">
+        <h2 class="text-center pattern text-white p-2 pattern-text mt-5"><small class="text-white-50">Effects of Poor</small> <b>SOLID WASTE MANAGEMENT</b></h2>
+        <div class="card-group card-section object-fit-cover mt-5">
+          <div class="card  border-0  image-hover" style="width: 24rem;">
+            <img src="./img/air-2.jpg" style=" height: -webkit-fill-available;"  class="card-img-top"  alt="...">
+            <div class="card-body bg-black text-white">
+              <h5 class="card-title pattern-text text-center">Air Pollution</h5>
+              <p class="card-text text-white-50 text-center pattern-text">Is the contamination of the indoor or outdoor environment by any chemical, physical or biological agent.
+              </p>
+            <a href="./effects.html" target="_blank" class="btn btn-dark text-white w-100 mt-3">Read More</a>
+
+            </div>
+
+          </div>
+          <div class="card border-0 image-hover" style="width: 24rem;">
+            <img src="./img/water.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-black text-white">
+              <h5 class="card-title pattern-text text-center">Water Contamination</h5>
+              <p class="card-text text-white-50 text-center pattern-text">Germs and chemicals can get in drinking water at the water’s source or in the distribution system after the water has already been treated.
+              </p>
+            <a href="./effects.html" target="_blank" class="btn btn-dark text-white w-100">Read More</a>
+
+            </div>
+      
+          </div>
+          <div class="card border-0 image-hover" style="width: 24rem;">
+            <img src="./img/soil.jpg" style=" height: -webkit-fill-available;"  class="card-img-top " alt="...">
+            <div class="card-body bg-black text-white">
+              <h5 class="card-title pattern-text text-center">Soil Contamination</h5>
+              <p class="card-text text-white-50 text-center pattern-text">Any substance in the soil that exceeds naturally-occurring levels and poses human health risks is a soil contaminant. 
+
+              </p>
+            <a href="./effects.html" target="_blank" class="btn btn-dark text-white w-100">Read More</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallex -->
+    <section>
+      <div class="row m-auto overflow-hidden hero-third-img flex-column-reverse text-center">
+       
+        <h2 class="fw-bold p-3 m-auto text-center mb-3 text-white fs-5 w-50 bg-black text-uppercase ">"Put trash in its place."</h2>
+        <p class="p-3 bg-black w-50 text-white m-auto">
+          The three R's rule, which stands for Reduce, Reuse and Recycle, is a way to take care of the environment by generating less waste, saving money and being a more responsible consumer.
+        </p>
+
+      </div>
+    
+    </section>
+
+    <!-- 3rs -->
+    <section class="container-fluid overflow-hidden bg-black card-section bg-gradient h-100">
+      <div class="row">
+        <h2 class="text-center pattern text-white p-2 pattern-text mt-5"><small class="text-white-50">The Three R's rule</small> <b>Reduce, Reuse, Recycle</b></h2>
+        <div class="card-group card-section object-fit-cover mt-5">
+          <div class="card  border-0  image-hover" style="width: 24rem;">
+            <img src="./img/reduce.jpg"  class="card-img-top"  alt="...">
+            <div class="card-body bg-black text-white">
+              <h5 class="card-title pattern-text text-center">Reduce</h5>
+              <p class="card-text text-white-50 text-center pattern-text">Is the contamination of the indoor or outdoor environment by any chemical, physical or biological agent.
+              </p>
+            <a href="./Method.html" target="_blank" class="btn btn-dark text-white w-100 mt-3">Read More</a>
+
+            </div>
+
+          </div>
+          <div class="card border-0 image-hover" style="width: 24rem;">
+            <img src="./img/reuse.jpg" class="card-img-top" alt="...">
+            <div class="card-body bg-black text-white">
+              <h5 class="card-title pattern-text text-center">Reuse</h5>
+              <p class="card-text text-white-50 text-center pattern-text">Germs and chemicals can get in drinking water at the water’s source or in the distribution system after the water has already been treated.
+              </p>
+            <a href="./Method.html" target="_blank" class="btn btn-dark text-white w-100">Read More</a>
+
+            </div>
+      
+          </div>
+          <div class="card border-0 image-hover" style="width: 24rem;">
+            <img src="./img/recycle-2.jpg" style=" height: -webkit-fill-available;"  class="card-img-top" alt="...">
+            <div class="card-body bg-black text-white">
+              <h5 class="card-title pattern-text  text-center">Recycle</h5>
+              <p class="card-text text-white-50 text-center pattern-text">Any substance in the soil that exceeds naturally-occurring levels and poses human health risks is a soil contaminant. 
+
+              </p>
+            <a href="./Method.html" target="_blank" class="btn btn-dark text-white mt-3 w-100">Read More</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- form -->
+   <section class="container-fluid overflow-hidden bg-black end-flex bg-gradient overflow-hidden foot-height">
+      <div class="row">
+        <div class="col-12 mt-5">
+        <h3 class="text-center text-white end"><small class="text-white-50">want to know more about</small> <b class="element-2">SOLID WASTE MANAGEMENT...</b></h3>
+        </div>
+        <div class="col-12 text-center m-2">
+        <a href="./contact/contact.html" target="_blank" class="text-white d-inline text-decoration-none fs-5 me-2"> Be One of Us</a>
+        <a href="./contact/contact.html" target="_blank">
+          <i class="bi bi-arrow-right-circle-fill text-white"></i>
+        </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <div class="container-fluid overflow-hidden bg-black footer-height bg-gradient text-white">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
+        <div class="col-md-4 d-flex align-items-center ">
+        
+          <span class=" m-3 mb-md-0 text-white">© 2023 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 m-4 justify-content-end list-unstyled d-flex">
+          <a class="text-white" href="https://twitter.com">
+            <i class="bi bi-twitter me-3"></i>
+          </a>
+            <a class="text-white" href="https://www.facebook.com/this.nikki">
+            <i class="bi bi-facebook me-3"></i>
+            </a>
+
+            <a class="text-white" href="https://www.linkedin.com/in/shwe-win-aung-nikki-577759237/">
+            <i class="bi bi-linkedin me-3"></i>
+            </a>
+
+        </ul>
+      </footer>
+    </div>
+
+
+      
+</body>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./node_modules/bootstrap/scss/bootstrap.scss"></script>
+<script src="./node_modules/typed.js/dist/typed.umd.js" type="module"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+
+
+  let typed = new Typed('.element', {
+    strings: [' It is normally discarded as useless or unwanted...', ' It is responsible for land pollution in urban and industrial areas...'],
+    typeSpeed: 20,
+    backSpeed: 30,
+    backDelay:3000,
+    loop:true
+  });
+
+  let element = new Typed('.element-2', {
+    strings: [' Statistics...', ' Effects...'],
+    typeSpeed: 40,
+    backSpeed: 50,
+    backDelay:4000,
+    loop:true
+  });
+
+
+</script>
+</html>
